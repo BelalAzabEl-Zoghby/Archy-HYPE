@@ -6,7 +6,7 @@ Clean purple-themed Hyprland rice with glass UI and minimal layout.
 
 ## 📸 Screenshot
 
-![screenshot](./wallpapers/screenshot.png)
+<img src="./wallpapers/screenshot.png" width="100%">
 
 ---
 
