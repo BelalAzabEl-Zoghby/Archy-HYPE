@@ -1,0 +1,69 @@
+/* شفافية الخلفية الأساسية */
+window#waybar {
+    background: transparent;
+}
+
+/* تصميم الجزيرة المركزية */
+.modules-center {
+    background-color: #11111b; 
+    border-radius: 50px;
+    padding: 2px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* تنسيق الساعة */
+#clock {
+    color: #cdd6f4;
+    font-weight: normal;
+    padding: 0 10px;
+}
+
+/* تنسيق أزرار مساحات العمل - توحيد الـ border-radius */
+#workspaces button {
+    color: #6c7086;
+    background: transparent;
+    border-radius: 50px; /* نفس انحناء الهوفر */
+    padding: 0 8px;
+    margin: 4px 2px;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    border: none;
+}
+
+/* زر مساحة العمل النشط (Meta-ball & Liquid) */
+#workspaces button.active {
+    background: linear-gradient(45deg, #ff79c6, #8be9fd);
+    color: #11111b;
+    border-radius: 50px; /* دائري تماماً */
+    padding: 0 18px;
+    margin: 4px 8px;
+    min-width: 25px;
+    background-size: 200% 200%;
+    animation: liquid 3s ease infinite;
+}
+
+/* تأثير الهوفر الموحد لكل العناصر */
+#clock:hover, 
+#pulseaudio:hover, 
+#network:hover, 
+#battery:hover,
+#workspaces button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50px; /* نفس الانحناء الموحد */
+}
+
+/* أنيميشن الألوان */
+@keyframes liquid {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* الأيقونات */
+#pulseaudio, #network, #battery {
+    padding: 0 10px;
+    min-width: 25px;
+}
+
+#pulseaudio { color: #f9e2af; }
+#network    { color: #89b4fa; }
+#battery    { color: #a6e3a1; }
