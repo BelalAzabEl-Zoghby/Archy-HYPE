@@ -46,6 +46,7 @@ cp -r * ~/.config/
 
 * Designed for 1920x1080 (may need tweaks)
 * Edit `monitors.conf` for your screen
+* You Should Have Omarchy Theme Installed For Some Commands And Shourtcuts And The Programs Before Installing This Theme
 * Make sure required packages are installed:
 
   * hyprland
